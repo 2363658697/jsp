@@ -1,0 +1,12 @@
+jsp:include(动态包含)和@include(静态包含)的区别：
+
+1.jsp：include通过page属性包含文件  @include通过file属性包含文件
+2.jsp:include 是在请求阶段向被包含的页面发起了一个请求，
+			  页面响应的内容被包含到了当前页面
+  @include 是直接将被包含文件的内容替换到了当前页面，如果当前页面和被包含页面出现相同的变量定义，会出现编译异常
+3.jsp:include 转译成两个java文件，@include转译成一个java文件
+4.jsp:include 可以通过jps:parm传递参数，@include则不能
+
+
+动作(<jsp:>)和指令(<@ page>):
+
